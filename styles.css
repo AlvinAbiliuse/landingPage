@@ -92,10 +92,11 @@ ul {
 }
 
 .btn {
+	font-size: 20px;
 	margin-top: 10px;
 	padding: 10px 40px;
 	background: #3882F6;
-	border-radius: 5px;
+	border-radius: 10px;
 	font-weight: bold;
 }
 
@@ -176,5 +177,36 @@ ul {
 }
 
 #section-four {
+	display: flex;
+	padding: 100px 200px;
+	justify-content: center;
+}
 
+#banner {
+	display: flex;
+	flex-direction: row;
+	padding: 50px 100px;
+	justify-content: space-between;
+	align-items: center;
+	width: 1050px;
+	background: #3882F6;
+	border-radius: 15px;
+}
+
+.left-items h3 {
+	font-size: 30px;
+	color: white;
+}
+.left-items p {
+	font-size: 20px;
+	color: white;
+}
+.btn.right-items {
+	border: 2px solid white;
+	flex-shrink: 0;
+}
+
+#footer {
+	padding: 50px;
+	font-size: 22px;
 }
