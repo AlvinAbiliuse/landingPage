@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	border: 1px solid red; */
 }
 
 body {
@@ -39,7 +40,10 @@ a {
 	margin-bottom: 20px;
 	flex-wrap: wrap;
 }
-
+#header h2 {
+	flex-basis: 200px;
+	flex-grow: 1;
+}
 #hero-page {
 	display: flex;
 	flex-direction: row;
@@ -51,14 +55,14 @@ a {
 	flex-grow: 1;
 }
 
-#hero-image {
+#hero-image img{
 	width: 520px;
 	height: 225px;
-	background : #828698;
 	flex-shrink: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	object-fit: cover;
 }
 
 ul {
@@ -137,7 +141,7 @@ ul {
 	gap: 10px;
 }
 
-#info-item {
+#info-item img{
 	width: 180px;
 	height: 180px;
 	border: 5px solid #3882F6;
@@ -166,6 +170,7 @@ ul {
 	font-weight: lighter;
 	font-style: italic;
 	width: 800px;
+	
 }
 
 .credits {
@@ -178,8 +183,8 @@ ul {
 
 #section-four {
 	display: flex;
-	padding: 100px 200px;
-	justify-content: center;
+	padding: 100px 0;
+	justify-content: space-around;
 }
 
 #banner {
@@ -188,14 +193,21 @@ ul {
 	padding: 50px 100px;
 	justify-content: space-between;
 	align-items: center;
-	width: 1050px;
+	width: 900px;
 	background: #3882F6;
 	border-radius: 15px;
+	flex-wrap: wrap;
 }
 
+.left-items {
+	flex-basis: 500px;
+	flex-grow: 4;
+	flex-shrink: 2;
+}
 .left-items h3 {
 	font-size: 30px;
 	color: white;
+	
 }
 .left-items p {
 	font-size: 20px;
@@ -204,6 +216,9 @@ ul {
 .btn.right-items {
 	border: 2px solid white;
 	flex-shrink: 0;
+	flex-grow: 1;
+	flex-basis: 100px;
+	text-align: center;
 }
 
 #footer {
